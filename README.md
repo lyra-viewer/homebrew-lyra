@@ -1,4 +1,4 @@
-# Nineveh Lyra
+# Lyra Viewer
 
 ## How do I install these formulae?
 
