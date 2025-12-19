@@ -2,14 +2,14 @@
 
 ## How do I install these formulae?
 
-`brew install nineveh/lyra/<formula>`
+`brew install amaurote/lyra/<formula>`
 
-Or `brew tap nineveh/lyra` and then `brew install <formula>`.
+Or `brew tap amaurote/lyra` and then `brew install <formula>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
-tap "nineveh/lyra"
+tap "amaurote/lyra"
 brew "<formula>"
 ```
 
