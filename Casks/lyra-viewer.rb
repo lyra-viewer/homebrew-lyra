@@ -1,19 +1,15 @@
 cask "lyra-viewer" do
-  version "0.1.2-alpha"
+  version "0.2.1"
 
   arch arm: "arm64", intel: "x64"
 
-  sha256 arm:   "d8960eb7a75923c8a6aed322600722517ad62ec7d9ca6c4bb93d8c2f900a510d",
-         intel: "d3004254309cb388020b1633c1507d81e4406f3be49256818975dd90af9e76aa"
+  sha256 arm:   "818dfc83cbc0ee3f4b4ade1a40dd94de110e976e9db47e4b0db95c09012e3a07",
+         intel: "ba58366984a255db5a7cc5cafb7ff9fdd603449641b8642761e7d5388a3afa24"
 
-  url "https://github.com/amaurote/Lyra/releases/download/v#{version}/LyraViewer-macos-#{arch}.zip"
+  url "https://github.com/lyra-viewer/Lyra/releases/download/v#{version}/LyraViewer-macos-#{arch}.zip"
   name "Lyra Viewer"
   desc "Lyra Viewer (SDL3 + SkiaSharp image viewer)"
-  homepage "https://github.com/amaurote/Lyra"
-
-  livecheck do
-    skip "Development/pre-release builds are version-pinned."
-  end
+  homepage "https://github.com/lyra-viewer/Lyra"
 
   depends_on formula: "sdl3"
   depends_on formula: "openexr"
