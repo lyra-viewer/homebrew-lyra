@@ -1,10 +1,10 @@
 cask "lyra-viewer" do
-  version "0.4.0"
+  version "0.5.0"
 
   arch arm: "arm64", intel: "x64"
 
-  sha256 arm:   "2aa9ce95d6dc7c69de4abf59eabe6c5e0869e6c9acf28ccf169745d08ed80f04",
-         intel: "c987caaf4cca3465ebbe2849f5de4d49896d8dff1b72653d72872ebcc2a0b163"
+  sha256 arm:   "2a8efdc77213b611d6996033ac222d979b892db0d3491ea6ad676466b032a6f1",
+         intel: "f61f4afd5562a154b82c0c48ba55632fe61831e080e7ed7cc5a2a3227b36c96b"
 
   url "https://github.com/lyra-viewer/Lyra/releases/download/v#{version}/LyraViewer-macos-#{arch}.zip"
   name "Lyra Viewer"
@@ -16,6 +16,9 @@ cask "lyra-viewer" do
   depends_on formula: "libheif"
   depends_on formula: "libde265"
   depends_on formula: "openjpeg"
+  depends_on formula: "libtiff"
+  depends_on formula: "jpeg-xl"
+  depends_on formula: "zstd"
 
   # Zips contain: LyraViewer-arm.app / LyraViewer-intel.app
   app "LyraViewer-#{arch}.app", target: "LyraViewer.app"
