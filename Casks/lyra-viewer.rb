@@ -1,10 +1,10 @@
 cask "lyra-viewer" do
-  version "0.5.1"
+  version "0.5.2"
 
   arch arm: "arm64", intel: "x64"
 
-  sha256 arm:   "17ac0140b9be50f625b236324bdc82057078d1ec80c2f42506baf2df0a4eff51",
-         intel: "b52ad648977082e4b104bae5812ec259cc77be1b62491878fd33070f80b053b8"
+  sha256 arm:   "81f372337883484711748917a8b032b575f75ddfc0c27d08f3e975d9cac1fac5",
+         intel: "99ec62e22d2635cdf3bd789b9f0a16a0fd47c39d4d07bf79cf8b516e21c157f9"
 
   url "https://github.com/lyra-viewer/Lyra/releases/download/v#{version}/LyraViewer-macos-#{arch}.zip"
   name "Lyra Viewer"
